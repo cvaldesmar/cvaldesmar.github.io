@@ -1,6 +1,8 @@
 // @codekit-prepend "/vendor/hammer-2.0.8.js";
 
-$( document ).ready(function() {
+$( document ).ready(
+  
+  function() {
 
   // DOMMouseScroll included for firefox support
   var canScroll = true,
@@ -35,15 +37,14 @@ $( document ).ready(function() {
   });
 
   $('.side-nav li, .outer-nav li').click(function(){
-
     if (!($(this).hasClass('is-active'))) {
-
-      var $this = $(this),
-          curActive = $this.parent().find('.is-active'),
-          curPos = $this.parent().children().index(curActive),
-          nextPos = $this.parent().children().index($this),
-          lastItem = $(this).parent().children().length - 1;
-
+      
+      var $this = $(this)
+      var curActive = $this.parent().find('.is-active')
+      var curPos = $this.parent().children().index(curActive)
+      var nextPos = $this.parent().children().index($this)
+      var lastItem = $(this).parent().children().length - 1;
+      
       updateNavs(nextPos);
       updateContent(curPos, nextPos, lastItem);
 
@@ -277,4 +278,5 @@ $( document ).ready(function() {
   workSlider();
   transitionLabels();
 
-});
+}
+);
