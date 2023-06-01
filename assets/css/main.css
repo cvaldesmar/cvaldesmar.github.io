@@ -739,7 +739,7 @@ body {
     background-color: #282828
 }
 
-.intro--banner::after {
+/* .intro--banner::after {
     content: "";
     position: absolute;
     bottom: 18px;
@@ -747,7 +747,7 @@ body {
     width: 30px;
     height: 4px;
     background-color: #0f33ff
-}
+} */
 
 .intro--banner h1 {
     position: relative;
@@ -813,15 +813,15 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    list-style: none
+    list-style: none;
 }
 
 .intro--options>a {
     max-width: 275px;
     text-decoration: none;
-    color: #2e5ec4;
-    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
-             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    color: #fff;
+    /* text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; */
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
 }
@@ -832,7 +832,8 @@ body {
 
 .intro--options h3 {
     font-size: 16px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    justify-content: right;
 }
 
 .intro--options p {
@@ -1433,6 +1434,9 @@ body {
 .contact--lockup .modal--information a {
     display: block;
     margin: 14px 0;
+    color:#fff;
+    /* text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; */
     text-decoration: none;
     font-weight: 700
 }
