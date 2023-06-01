@@ -588,12 +588,6 @@ body {
     transition: opacity .4s ease-in-out .4s
 }
 
-@media (max-width: 767px) {
-    .header--cta {
-        display: none
-    }
-}
-
 .side-nav {
     position: relative;
     display: -webkit-box;
@@ -646,23 +640,43 @@ body {
 }
 
 .side-nav li:nth-child(1)::before {
-    content: "01"
+    content: "1"
+}
+
+.side-nav li:nth-child(1):not(.is-active)::before {
+    content: "Quien soy"
 }
 
 .side-nav li:nth-child(2)::before {
-    content: "02"
+    content: "2"
+}
+
+.side-nav li:nth-child(2):not(.is-active)::before {
+    content: "Estudios"
 }
 
 .side-nav li:nth-child(3)::before {
-    content: "03"
+    content: "3"
+}
+
+.side-nav li:nth-child(3):not(.is-active)::before {
+    content: "Trabajos"
 }
 
 .side-nav li:nth-child(4)::before {
-    content: "04"
+    content: "4"
+}
+
+.side-nav li:nth-child(4):not(.is-active)::before {
+    content: "Proyectos"
 }
 
 .side-nav li:nth-child(5)::before {
-    content: "05"
+    content: "5"
+}
+
+.side-nav li:nth-child(5):not(.is-active)::before {
+    content: "Contacto"
 }
 
 .side-nav li.is-active {
@@ -745,7 +759,7 @@ body {
 
 .intro--banner button {
     position: relative;
-    padding: 5px 17px 5px 12px;
+    padding: 5px 17px 5px 37px;
     font-weight: 700;
     text-transform: uppercase;
     background-color: transparent;
@@ -1836,8 +1850,30 @@ body {
     background-color: #0f33ff
 }
 
-.outer-nav>li.is-active::before {
+/* .outer-nav>li.is-active::before {
     opacity: 1
+} */
+
+/* .outer-nav>li.is-active {
+    background-color: #F2BB05;
+    transition: width 0.5s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+} */
+
+.outer-nav>li.is-active::before {
+    content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: #ffd500;
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
 }
 
 @media (max-width: 767px) {
