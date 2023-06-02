@@ -1,6 +1,4 @@
-// @codekit-prepend "/vendor/hammer-2.0.8.js";
-
-$( document ).ready(
+$(document).ready(
   
   function() {
 
@@ -35,6 +33,7 @@ $( document ).ready(
     }
 
   });
+
 
   $('.side-nav li, .outer-nav li').click(function(){
     if (!($(this).hasClass('is-active'))) {
